@@ -29,3 +29,4 @@ export RAILS_ENV=production
 
 # run delayed jobs
 exec script/delayed_job $@
+

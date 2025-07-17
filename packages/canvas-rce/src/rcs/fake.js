@@ -612,7 +612,7 @@ export function searchFlickr(term) {
 
 export function setUsageRights(id, usageRights) {
   const msg = 'Setting the following usage rights for file (id: %s):'
-  console.log(msg, id, usageRights) // eslint-disable-line no-console
+  console.log(msg, id, usageRights)  
 }
 
 export function getFile(id) {

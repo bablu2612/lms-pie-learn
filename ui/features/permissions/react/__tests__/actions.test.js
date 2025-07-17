@@ -177,7 +177,7 @@ it('tabChanged dispatches permissionsTabChanged', () => {
   expect(dispatchMock).toHaveBeenCalledWith(expectedDispatch)
 })
 
-/* eslint-disable promise/no-callback-in-promise */
+ 
 describe('api actions', () => {
   const server = setupServer()
 
@@ -428,4 +428,4 @@ describe('api actions', () => {
   })
 })
 
-/* eslint-enable promise/no-callback-in-promise */
+ 

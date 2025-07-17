@@ -62,7 +62,7 @@ export default function unflatten(obj) {
           key = keys[i] === '' ? cur.length : keys[i]
 
           cur = cur[key] =
-            // eslint-disable-next-line no-restricted-globals
+             
             i < lastKey ? cur[key] || (keys[i + 1] && isNaN(keys[i + 1]) ? {} : []) : val
           i++
         }

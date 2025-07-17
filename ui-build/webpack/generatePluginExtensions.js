@@ -32,7 +32,7 @@ async function generateImports() {
       const packagePath = path.join(pluginsDir, dir, 'package.json')
 
       try {
-        // eslint-disable-next-line no-await-in-loop
+         
         const packageJson = await fs.readFile(packagePath, 'utf8').catch(() => null)
 
         if (!packageJson) {

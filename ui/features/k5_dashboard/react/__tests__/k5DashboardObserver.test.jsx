@@ -164,7 +164,7 @@ describe('K5Dashboard Parent Support', () => {
     // Should not fetch student 4's cards again; they've been cached
     expect(requestUrls[requestUrls.length - 1]).toContain('observed_user_id=2')
     // 2 total requests - one for student 4, one for student 2
-    expect(requestUrls.length).toBe(2)
+    expect(requestUrls).toHaveLength(2)
     server.close()
   })
 

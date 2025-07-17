@@ -18,6 +18,13 @@
 # with this program. If not, see <http://www.gnu.org/licenses/>.
 
 # Set up gems listed in the Gemfile.
+begin
+  gem 'stringio', '3.1.7'
+  require 'stringio'
+rescue Gem::LoadError => e
+  warn "Could not load stringio 3.1.7: #{e.message}"
+end
+
 ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
 
 require "bundler"

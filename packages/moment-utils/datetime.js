@@ -209,7 +209,7 @@ export function format(value, format, zone) {
   const usingOtherZone = arguments.length === 3 && zone
 
   if (usingOtherZone && !(zone in state.tzData)) {
-    // eslint-disable-next-line no-console
+     
     console.warn(
       `You are asking to format DateTime into a timezone that is not supported -- ${zone}`
     )
