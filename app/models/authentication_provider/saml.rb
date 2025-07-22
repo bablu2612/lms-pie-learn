@@ -84,10 +84,10 @@ class AuthenticationProvider::SAML < AuthenticationProvider::Delegated
      {
        idp_in_response_to: -> { t("IdP InResponseTo") },
        idp_login_destination: -> { t("IdP LoginResponse destination") },
-       is_valid_login_response: -> { t("Canvas thinks response is valid") },
+       is_valid_login_response: -> { t("Pi e-Learn thinks response is valid") },
        login_response_validation_error: -> { t("Validation Error") },
-       login_to_canvas_success: -> { t("User succesfully logged into Canvas") },
-       canvas_login_fail_message: -> { t("Canvas Login failure message") },
+       login_to_canvas_success: -> { t("User succesfully logged into Pi e-Learn") },
+       canvas_login_fail_message: -> { t("Pi e-Learn Login failure message") },
        logged_in_user_id: -> { t("Logged in user id") },
        idp_response_encoded: -> { t("IdP LoginResponse encoded") },
        idp_response_xml_encrypted: -> { t("IdP LoginResponse encrypted") },
