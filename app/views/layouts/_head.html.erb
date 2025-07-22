@@ -27,7 +27,7 @@
   <% unless @allow_robot_indexing %><meta name="robots" content="noindex,nofollow" /><% end %>
   <%= include_custom_meta_tags %>
   <% if @sentry_trace.present? %><meta name="sentry-trace" content="<%= @sentry_trace %>"/><% end %>
-  <title><%= @page_title || (yield :page_title).presence || t('default_page_title', "Canvas LMS") %></title>
+  <title><%= @page_title || (yield :page_title).presence || t('default_page_title', "Pi e-Learn") %></title>
 
   <%= preload_link_tag(font_path("/fonts/lato/extended/Lato-Regular.woff2"), { as: "font", type: "font/woff2", crossorigin: 'anonymous' }) %>
   <%= preload_link_tag(font_path("/fonts/lato/extended/Lato-Bold.woff2"), { as: "font", type: "font/woff2", crossorigin: 'anonymous' }) %>
